@@ -38,6 +38,12 @@ DB_NAME=test_orm
 DB_USER=postgres
 DB_PASSWORD=password
 PORT=8081
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+LOGGER_ACTIVITY_CHANNEL=logger:activity
+LOGGER_ERROR_CHANNEL=logger:error
 ```
 
 # FeedService
