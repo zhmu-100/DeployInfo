@@ -14,6 +14,12 @@ CLICKHOUSE_PASSWORD=
 
 API_HOST=0.0.0.0
 API_PORT=8080
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+REDIS_ACTIVITY_CHANNEL=logger:activity
+REDIS_ERROR_CHANNEL=logger:error
 ```
 
 # DB
@@ -49,6 +55,12 @@ PORT=8082
 DB_MODE=LOCAL # LOCAL or gateway
 DB_HOST=localhost
 DB_PORT=8081
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+LOGGER_ACTIVITY_CHANNEL=logger:activity
+LOGGER_ERROR_CHANNEL=logger:error
 ```
 
 # FileService
@@ -67,6 +79,11 @@ MINIO_SECRET_KEY=V28Y73MJne6Mc6Ag3CoS7yMy5kCox6ejhKZKQZ28
 MINIO_BUCKET_NAME=test-bucket
 API_HOST=0.0.0.0
 API_PORT=8080
+
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
 ```
 
 # NotesService
@@ -84,6 +101,11 @@ SERVICE_PORT=8001
 DB_MODE=LOCAL        # LOCAL or gateway
 DB_HOST=localhost
 DB_PORT=8082
+
+# Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
 ```
 
 # ProfileService
@@ -101,6 +123,12 @@ PORT=8081
 DB_MODE=LOCAL     # LOCAL or gateway
 DB_HOST=localhost
 DB_PORT=8082
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+LOGGER_ACTIVITY_CHANNEL=logger:activity
+LOGGER_ERROR_CHANNEL=logger:error
 ```
 
 # DietService
@@ -118,4 +146,61 @@ PORT=8082
 DB_MODE=LOCAL        # LOCAL or gateway
 DB_HOST=localhost
 DB_PORT=8081
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+LOGGER_ACTIVITY_CHANNEL=logger:activity
+LOGGER_ERROR_CHANNEL=logger:error
 ```
+
+
+# WorkoutService
+
+[Репозиторий](https://github.com/zhmu-100/WorkoutService/tree/dev)
+
+Ветка - dev
+
+**Расположение .env файла - в папке app (там же, где и build.gradle.kts)**
+
+.env файл:
+```
+PORT=8001
+
+DB_MODE=LOCAL        # LOCAL or gateway
+DB_HOST=localhost
+DB_PORT=8081
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+```
+
+# StatisticsService
+
+[Репозиторий](https://github.com/zhmu-100/StatisticsService/tree/dev)
+
+Ветка - dev
+
+**Расположение .env файла - в папке app (там же, где и build.gradle.kts)**
+
+.env файл:
+```
+PORT=8080
+
+# Database
+DB_MODE=local
+DB_HOST=localhost
+DB_PORT=8080
+
+
+# Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+```
+
+# LogService
+
+???
+Тут к Игорю или Артему
