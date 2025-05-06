@@ -207,6 +207,14 @@ REDIS_PASSWORD=
 ```
 
 # LogService
+
+[Репозиторий](https://github.com/zhmu-100/LogService/tree/dev)
+
+Ветка - dev
+
+**Расположение .env файла - в папке app (там же, где и build.gradle.kts)**
+
+.env файл:
 ```
 # Redis Config
 REDIS_HOST=localhost
